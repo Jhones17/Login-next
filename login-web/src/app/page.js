@@ -1,19 +1,33 @@
 
-export default function home(){
-  return(
-    <div>
-      <div id="principal">
-      <h1>Tela de login</h1>
-      <form>
-          <label>Email</label>
-          <input type="text" placeholder="seu@email.com"></input> <br></br>
-          <label>senha</label>
-          <input type="password"></input> 
-          <br></br><button>Entrar</button> <br></br>
-          <a href="esqueci">Esqueci a senha</a><br></br>
-          <label>não tem uma conta? <a href="cadrastro">cadastre-se</a></label>
-      </form>
-      </div>
-    </div>
-  )
+export default function HomeCadastro(){
+ 
+
+    return(
+        <div>
+            <div id="principal">
+                <h1> tela de cadastro </h1>
+                <form className="tela-cadastro">
+                    <div className="campo">                    
+                    <label htmlFor="nome">nome</label>
+                        <input  id="nome" type="text" placeholder='jhon vitor...'></input><br/>
+
+                    <label htmlFor="email">Email</label>
+                        <input id="email" type="email" placeholder='seu@email.com.br'></input><br/>
+
+                    <label htmlFor="senha">senha</label>
+                        <input id="senha" type="password"></input><br/>
+
+                    <label htmlFor="numero">Numero</label>
+                        <input id="numero" type="number"></input><br/>
+                    </div>
+                    <div className="Enviar">
+                            <button>Enviar</button> <br/>
+                    <label>
+                        ja possui uma conta? <a href='login'><strong>faça seu login</strong></a>
+                    </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    )
 }
